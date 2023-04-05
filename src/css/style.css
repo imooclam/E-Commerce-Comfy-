@@ -1,0 +1,145 @@
+/* ***************************
+***************************
+
+ 03-  Nav ProJect
+***************************
+*************************** */
+/* if we want to make grid in navbar we have to get container for every column */
+nav {
+  /* background-color: var(--clr-primary-10); */
+  padding-inline: 2.6rem;
+  display: flex;
+  /* grid-template-columns: 1fr 2fr 1fr auto; */
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  position: relative;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.header__navbar {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 4rem;
+}
+.img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* /////////////////////////////////// */
+/* ///////////////////////////////////
+Error PAge */
+/* /////////////////////////////////// */
+.mainbox {
+  background-color: #95c2de;
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+.err {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #ffffff;
+}
+
+.err2 {
+  color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+/* a:hover {
+  text-decoration: underline;
+} */
+.btn-ghost {
+  text-decoration: none;
+  border: 1px solid rgba(248, 214, 146, 0.504);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ghost:hover {
+  box-shadow: 1px 1px 25px 10px rgba(103, 43, 5, 0.4);
+}
+
+.btn-ghost:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 236, 215, 0.628),
+    transparent
+  );
+  transition: all 1s ease-in-out;
+}
+
+.btn-ghost:hover:before {
+  left: 100%;
+}
+/* ///////////////////////////////////////// */
+/* hero header */
+.hero-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  padding-inline: 6rem;
+  background-color: rgb(241, 213, 176);
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+h2 a {
+  color: hsl(22, 28%, 29%);
+}
+
+/* ///////////////////////////////////////// */
+main {
+  background-color: #fff;
+}
+main .wrap {
+  background-color: #f1f5f9;
+}
