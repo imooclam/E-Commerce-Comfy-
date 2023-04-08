@@ -7,11 +7,15 @@ import './css/style.css';
 import './css/query.css';
 // Global Context
 import ProductProvider from './context/ProductionContext';
+// Filter Context
+import FilterProvider from './context/FilterContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ProductProvider>
-      <App />
+      <FilterProvider>
+        <App />
+      </FilterProvider>
     </ProductProvider>
   </React.StrictMode>
 );

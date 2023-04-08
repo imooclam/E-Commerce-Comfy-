@@ -16,6 +16,9 @@ import ProductImages from './ProductImages';
 import AddToCart from './AddToCart';
 import StarsAlternative from './StarsAlternative';
 import AddAmountButton from './AddAmountButton';
+import ProductList from './ProductList';
+import Sort from './Sort';
+import Filter from './Filter';
 
 export {
   Footer,
@@ -36,4 +39,7 @@ export {
   AddToCart,
   StarsAlternative,
   AddAmountButton,
+  Sort,
+  ProductList,
+  Filter,
 };

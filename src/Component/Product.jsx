@@ -5,9 +5,9 @@ import { formatPrice } from '../utils/helper';
 const Product = ({ id, name, image, price }) => {
   return (
     <Wrapper>
-      <article className="  product_container">
+      <article className="product_container">
         <img src={image} alt={name} className="product-img" />
-        <Link to={`products/${id}`} className="product-link">
+        <Link to={`/products/${id}`} className="product-link">
           <FaSearch />
         </Link>
       </article>
@@ -28,12 +28,19 @@ const Wrapper = styled.article`
     width: 100%;
     border-radius: 1rem;
   }
-  .product-img {
+  /* .product-img {
     border-radius: 1rem;
     width: 100%;
     display: block;
     object-fit: cover;
     border-radius: 5px;
+    transition: var(--transition);
+  } */
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: var(--radius);
     transition: var(--transition);
   }
   .product-link {

@@ -241,14 +241,14 @@ body {
   padding: 0;
   color: #555;
 }
-.section {
+/* .section {
   padding: 5rem 0;
 }
 .section-center {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
-}
+} */
 .container {
   /* max-width: 100%;
   padding-inline: 15px;
@@ -534,6 +534,21 @@ margin--b--md {
   max-width: var(--max-width);
   margin: 0 auto;
 }
+/* section */
+.section-start {
+  padding: 5rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 
 .link {
   color: var(--grey-500);
@@ -544,4 +559,7 @@ margin--b--md {
 }
 .active {
   color: #e67e22;
+}
+.page {
+  min-height: calc(100vh - (20vh + 10rem));
 }
